@@ -1,0 +1,22 @@
+#!/bin/bash
+
+set -e
+
+sudo nala autoremove
+sudo nala autopurge
+sudo nala clean
+
+sudo nala update && sudo nala upgrade -y
+brew update && brew upgrade
+
+# check rust updates
+rustup update stable
+
+# cargo packages
+cargo install-update -a
+
+# oh-my-posh
+# curl -s https://ohmyposh.dev/install.sh | bash -s -- -d ~/bin
+
+# spicetify
+spicetify update

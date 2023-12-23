@@ -1,0 +1,13 @@
+#!/bin/bash
+
+file="/sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode"
+current_mode=$(cat $file)                
+                
+if [ $current_mode -gt 0 ]; then  
+  # If variable equal to 1  
+  sudo bash -c "echo 0 > $file"
+  echo "Disabled battery conservation mode"
+else
+  sudo bash -c "echo 1 > $file"
+  echo "Enabled battery conservation mode"
+fi 
