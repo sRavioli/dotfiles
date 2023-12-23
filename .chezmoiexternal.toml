@@ -1,8 +1,9 @@
 [".config/wezterm"]
   type = "git-repo"
-  url = "https://github.com/sravioli/wezterm"
+  url = "https://github.com/sravioli/wezterm/archive/main.tar.gz"
 
 
-[".config/neovim"]
+[".config/nvim"]
   type = "git-repo"
-  url = "https://github.com/sravioli/neovim"
+  exact = true
+  url = "https://github.com/sravioli/nvim/archive/main.tar.gz"
