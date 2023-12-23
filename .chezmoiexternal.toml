@@ -7,3 +7,8 @@
   type = "git-repo"
   exact = true
   url = "https://github.com/sravioli/nvim/archive/main.tar.gz"
+
+["/usr/src/neovim"]
+  type = "git-repo"
+  exact = true
+  url = "https://github.com/neovim/neovim/archive/main.tar.gz"
