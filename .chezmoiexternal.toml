@@ -1,0 +1,8 @@
+[".config/wezterm"]
+  type = "git-repo"
+  url = "https://github.com/sravioli/wezterm"
+
+
+[".config/neovim"]
+  type = "git-repo"
+  url = "https://github.com/sravioli/neovim"
